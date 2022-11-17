@@ -1,0 +1,51 @@
+//   3.16
+
+#include <stdio.h>
+
+int main(){
+
+    float percorso, benzina, media, mediatot;
+
+    int counter;
+
+    
+
+    do
+
+    {
+
+        printf("Inserisci il tragitto percorso: ");
+
+        scanf("%f", &percorso);
+
+        if(percorso != -1){
+
+            printf("Inserisci il carburante consumato: ");
+
+            scanf("%f", &benzina);
+
+            media = percorso/benzina;
+
+            printf("Consumo medio Km/L: %.2f\n", media);
+
+            mediatot = mediatot + media;
+
+            counter += 1;
+
+        } 
+
+        else 
+
+        break;
+
+        
+
+    } while (percorso = -1);
+
+    printf("Il consumo medio in totale e' stato: %.2f", mediatot/counter);
+
+    
+
+    
+
+}
